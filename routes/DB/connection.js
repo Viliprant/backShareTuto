@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const urlDB = 'mongodb://localhost:27017'
+const urlDB = process.env.URL_MONGODB
 
 module.exports = {
     connection: (resolve, reject) =>{
